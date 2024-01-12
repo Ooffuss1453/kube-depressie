@@ -17,6 +17,6 @@ steps:
     connectionType: 'kubernetesServiceConnection'
     kubernetesServiceConnection: 'KubeAPI'
     namespace: 'Portainer'
-    manifests: 'manifests/portainer.yaml'
+    manifests: './manifests/portainer.yaml'
     arguments: '--validate=false'
 
