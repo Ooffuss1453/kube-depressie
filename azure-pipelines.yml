@@ -18,5 +18,5 @@ steps:
     kubernetesServiceConnection: 'KubeAPI'
     namespace: 'Portainer'
     manifests: 'manifests/portainer.yaml'
-    arguments: '--validate=false' # Add this line to temporarily disable validation
+    arguments: '--validate=false'
 
