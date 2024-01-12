@@ -23,3 +23,4 @@ steps:
     kubernetesServiceConnection: 'KubeAPI'
     namespace: 'Portainer'
     manifests: 'manifests/portainer.yaml'
+    arguments: '-f /manifests/portainer.yaml --insecure-skip-tls-verify'
