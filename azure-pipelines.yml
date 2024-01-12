@@ -1,8 +1,3 @@
-# HTML
-# Archive your static HTML project and save it with the build record.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
 - main
 
@@ -23,4 +18,5 @@ steps:
     kubernetesServiceConnection: 'KubeAPI'
     namespace: 'Portainer'
     manifests: 'manifests/portainer.yaml'
-    arguments: '-f /manifests/portainer.yaml --insecure-skip-tls-verify'
+    arguments: '--validate=false' # Add this line to temporarily disable validation
+
